@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "idUser": 2,
+        "message": "I’ll never turn to the dark side. You’ve failed, your highness. I am a Jedi, like my father before me.",
+        "timestamp": 1609160357
+    },
+    {
+        "id": 2,
+        "idUser": 3,
+        "message": "Help me, Obi-Wan Kenobi. You’re my only hope.",
+        "timestamp": 1609246757
+    },
+    {
+        "id": 3,
+        "idUser": 1,
+        "message": "I find your lack of faith disturbing.",
+        "timestamp": 1609268357
+    },
+    {
+        "id": 4,
+        "idUser": 5,
+        "message": "It’s the ship that made the Kessel run in less than twelve parsecs. I’ve outrun Imperial starships. Not the local bulk cruisers, mind you. I’m talking about the big Corellian ships, now. She’s fast enough for you, old man.",
+        "timestamp": 1609282757
+    },
+    {
+        "id": 5,
+        "idUser": 4,
+        "message": "Hello there!",
+        "timestamp": 1609307957
+    },
+    {
+        "id": 6,
+        "idUser": 3,
+        "message": "Why, you stuck-up, half-witted, scruffy-looking nerf herder!",
+        "timestamp": 1609329557
+    },
+    {
+        "id": 7,
+        "idUser": 5,
+        "message": "Never tell me the odds!",
+        "timestamp": 1609415957
+    },
+    {
+        "id": 8,
+        "idUser": 1,
+        "message": "No. I am your father",
+        "timestamp": 1609423157
+    },
+    {
+        "id": 9,
+        "idUser": 4,
+        "message": "Well, if droids could think, there’d be none of us here, would there?",
+        "timestamp": 1609509557
+    },
+    {
+        "id": 10,
+        "idUser": 4,
+        "message": "The Force will be with you. Always.",
+        "timestamp": 1609595957
+    },
+    {
+        "id": 11,
+        "idUser": 5,
+        "message": "Chewie, we’re home.",
+        "timestamp": 1612274357
+    },
+    {
+        "id": 12,
+        "idUser": 6,
+        "message": "I am not a Jedi",
+        "timestamp": 1612619957
+    },
+    {
+        "id": 13,
+        "idUser": 7,
+        "message": "I'm a message from the future. How can it be possible? Who is the Doctor?",
+        "timestamp": 1622659957
+    }
+]

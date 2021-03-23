@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "username": "dvader",
+        "firstName": "Darth",
+        "lastName": "Vader",
+        "photo": "https://avatarfiles.alphacoders.com/177/thumb-177869.jpg",
+        "following": [3, 4, 7]
+    },
+    {
+        "id": 2,
+        "username": "farmboy",
+        "firstName": "Luke",
+        "lastName": "Skywalker",
+        "photo": "https://avatarfiles.alphacoders.com/454/thumb-1920-45432.jpg",
+        "following": [1, 4]
+    },
+    {
+        "id": 3,
+        "username": "princess",
+        "firstName": "Leia",
+        "lastName": "Organa",
+        "photo": "https://avatarfiles.alphacoders.com/711/thumb-71124.jpg",
+        "following": [2, 4]
+    },
+    {
+        "id": 4,
+        "username": "master",
+        "firstName": "Obi-Wan",
+        "lastName": "Kenobi",
+        "photo": "https://avatarfiles.alphacoders.com/211/thumb-1920-211305.jpg",
+        "following": [2, 3]
+    },
+    {
+        "id": 5,
+        "username": "smuggler",
+        "firstName": "Han",
+        "lastName": "Solo",
+        "photo": "https://avatarfiles.alphacoders.com/641/thumb-1920-64112.jpg",
+        "following": [2, 3, 4]
+    },
+    {
+        "id": 6,
+        "username": "fulcrum",
+        "firstName": "Ahsoka",
+        "lastName": "Tano",
+        "photo": "https://avatarfiles.alphacoders.com/379/thumb-1920-37992.jpg",
+        "following": [2, 4]
+    },
+    {
+        "id": 7,
+        "username": "TheDoctor",
+        "firstName": "Doctor",
+        "lastName": "Who",
+        "photo": "",
+        "following": []
+    }
+]
