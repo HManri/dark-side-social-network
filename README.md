@@ -5,7 +5,7 @@
 The Social Network from the Dark Side. Come with use, we have cookies!
 
 This is an exercise to use the most common things used in React in a same project.
-You can access to https://hectormanrique.com/dark-side-social-network/ and see the result!
+You can access to https://www.hectormanrique.com/dark-side-social-network/ and see the result!
 
 ## 💡 To take in consideration
 
