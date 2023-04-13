@@ -5,7 +5,7 @@ import storage from 'redux-persist/lib/storage';
 import { mainReducer } from 'reducers';
 
 const persistConfig = {
-    key: 'console-twitter',
+    key: 'console-dark-side',
     storage,
     blacklist: ['followingUsers', 'timeline'],
 };

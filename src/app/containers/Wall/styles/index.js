@@ -9,6 +9,7 @@ export default (theme) => ({
     },
     left: {
         boxSizing: 'border-box',
+        width: '350px',
         height: '100%',
         padding: '16px',
         borderRight: `1px solid ${theme.colors.border}`,

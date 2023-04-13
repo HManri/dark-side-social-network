@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
 import { createUseStyles, useTheme } from 'react-jss';
 import { UsersActions } from 'actions';
-import { getDefaultUserPhoto } from 'utils/images';
+import { getDefaultUserPhoto, handleOnErrorImageLoad } from 'utils/images';
 import styles from './styles/userHeader';
 
 const mapDispatchToProps = (dispatch) => {
@@ -40,7 +40,11 @@ const UserHeader = memo(({ username, getUserInfo }) => {
     return (
         <div className={rootClassName}>
             <div className={photoContainerClassName}>
-                <img src={userImageUrl} alt={userInfo?.username || ``} />
+                <img
+                    src={userImageUrl}
+                    alt={userInfo?.username || ``}
+                    onError={handleOnErrorImageLoad}
+                />
             </div>
             <div className={userInfoClassName}>
                 <span className={nameClassName}>{`${userInfo?.firstName || ``} ${

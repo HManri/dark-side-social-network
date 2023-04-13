@@ -7,7 +7,7 @@ import { createUseStyles, useTheme } from 'react-jss';
 import { Link, useHistory } from 'react-router-dom';
 import { AuthActions } from 'actions';
 import Logout from 'components/Icons/Logout';
-import { getDefaultUserPhoto } from 'utils/images';
+import { getDefaultUserPhoto, handleOnErrorImageLoad } from 'utils/images';
 import styles from './styles';
 
 const mapStateToProps = (state) => {
@@ -43,7 +43,7 @@ const MenuBar = memo(({ userPhoto, logout }) => {
         <div className={rootClassName}>
             <div className={mainActionsClassName}>
                 <Link to="/" className={`home-icon ${iconClassName}`}>
-                    <img src={userPhoto} alt="Home" />
+                    <img src={userPhoto} alt="Home" onError={handleOnErrorImageLoad} />
                 </Link>
             </div>
             <div className={`logout-icon ${iconClassName}`} onClick={onLogout}>

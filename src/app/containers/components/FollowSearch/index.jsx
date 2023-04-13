@@ -32,9 +32,7 @@ const FollowSearch = memo(({ search, followUser }) => {
 
     const rootClassName = classnames('follow-search', classes.followBoard);
     const titleClassName = classnames('following-search__title', classes.title);
-    const contentClassName = classnames('follow-search__users', classes.content, {
-        [classes.isLoading]: loading,
-    });
+    const contentClassName = classnames('follow-search__users', classes.content);
     const loadingContainerClassName = classnames(classes.loadingContainer);
     const loadingClassName = classnames(classes.loading);
     const usersContainerClassName = classnames(
@@ -137,7 +135,7 @@ const FollowSearch = memo(({ search, followUser }) => {
                         </div>
                     </div>
                 )}
-                {usersContainer}
+                {!loading && usersContainer}
             </div>
         </div>
     );

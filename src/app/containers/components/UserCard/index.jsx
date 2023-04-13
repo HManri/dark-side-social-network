@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { createUseStyles, useTheme } from 'react-jss';
-import { getDefaultUserPhoto } from 'utils/images';
+import { getDefaultUserPhoto, handleOnErrorImageLoad } from 'utils/images';
 import styles from './styles';
 
 const useStyles = createUseStyles(styles);
@@ -22,7 +22,7 @@ const UserCard = memo(({ className, user }) => {
     return (
         <div className={rootClassName}>
             <div className={photoClassName}>
-                <img src={userImageUrl} alt={user.username} />
+                <img src={userImageUrl} alt={user.username} onError={handleOnErrorImageLoad} />
             </div>
             <div className={usernameClassName}>
                 <div className={fullNameClassName}>{`${user.firstName} ${user.lastName}`}</div>
