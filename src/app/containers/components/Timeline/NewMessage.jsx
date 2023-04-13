@@ -7,7 +7,7 @@ import { createUseStyles, useTheme } from 'react-jss';
 import { MessagesActions } from 'actions';
 import Input from 'components/Input';
 import Button from 'components/Button';
-import { getDefaultUserPhoto } from 'utils/images';
+import { getDefaultUserPhoto, handleOnErrorImageLoad } from 'utils/images';
 import styles from './styles/newMessage';
 
 const mapStateToProps = (state) => {
@@ -65,7 +65,7 @@ const NewMessage = memo(({ userPhoto, userName, createMessage }) => {
         <div className={rootClassName}>
             <div className={containerClassName}>
                 <div className={photoContainerClassName}>
-                    <img src={userPhoto} alt={userName} />
+                    <img src={userPhoto} alt={userName} onError={handleOnErrorImageLoad} />
                 </div>
                 <Input
                     className="new-message"

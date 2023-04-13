@@ -4,7 +4,7 @@
         "username": "dvader",
         "firstName": "Darth",
         "lastName": "Vader",
-        "photo": "https://avatarfiles.alphacoders.com/177/thumb-177869.jpg",
+        "photo": "static/avatars/darth_vader.png",
         "following": [3, 4, 7]
     },
     {
@@ -12,7 +12,7 @@
         "username": "farmboy",
         "firstName": "Luke",
         "lastName": "Skywalker",
-        "photo": "https://avatarfiles.alphacoders.com/454/thumb-1920-45432.jpg",
+        "photo": "static/avatars/luke_skywalker.png",
         "following": [1, 4]
     },
     {
@@ -20,7 +20,7 @@
         "username": "princess",
         "firstName": "Leia",
         "lastName": "Organa",
-        "photo": "https://avatarfiles.alphacoders.com/711/thumb-71124.jpg",
+        "photo": "static/avatars/leia_organa.jpeg",
         "following": [2, 4]
     },
     {
@@ -28,7 +28,7 @@
         "username": "master",
         "firstName": "Obi-Wan",
         "lastName": "Kenobi",
-        "photo": "https://avatarfiles.alphacoders.com/211/thumb-1920-211305.jpg",
+        "photo": "static/avatars/kenobi.png",
         "following": [2, 3]
     },
     {
@@ -36,15 +36,15 @@
         "username": "smuggler",
         "firstName": "Han",
         "lastName": "Solo",
-        "photo": "https://avatarfiles.alphacoders.com/641/thumb-1920-64112.jpg",
-        "following": [2, 3, 4]
+        "photo": "static/avatars/han_solo.jpeg",
+        "following": [2, 3, 4, 8]
     },
     {
         "id": 6,
         "username": "fulcrum",
         "firstName": "Ahsoka",
         "lastName": "Tano",
-        "photo": "https://avatarfiles.alphacoders.com/379/thumb-1920-37992.jpg",
+        "photo": "static/avatars/ahsoka_tano.jpg",
         "following": [2, 4]
     },
     {
@@ -52,6 +52,22 @@
         "username": "TheDoctor",
         "firstName": "Doctor",
         "lastName": "Who",
+        "photo": "static/avatars/doctor_who.png",
+        "following": [8]
+    },
+    {
+        "id": 8,
+        "username": "smuggler",
+        "firstName": "Chewbacca",
+        "lastName": "Wookie",
+        "photo": "static/avatars/chewbacca.png",
+        "following": [2, 3, 4, 5]
+    },
+    {
+        "id": 8,
+        "username": "enigma",
+        "firstName": "Enigma",
+        "lastName": "Quote",
         "photo": "",
         "following": []
     }

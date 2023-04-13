@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { createUseStyles, useTheme } from 'react-jss';
 import { Link } from 'react-router-dom';
-import { getDefaultUserPhoto } from 'utils/images';
+import { getDefaultUserPhoto, handleOnErrorImageLoad } from 'utils/images';
 import styles from './styles/message';
 
 const useStyles = createUseStyles(styles);
@@ -33,7 +33,11 @@ const Message = memo(({ message }) => {
     return (
         <div className={rootClassName}>
             <div className={photoClassName}>
-                <img src={userImageUrl} alt={message.user.username} />
+                <img
+                    src={userImageUrl}
+                    alt={message.user.username}
+                    onError={handleOnErrorImageLoad}
+                />
             </div>
             <div className={messageContainerClassName}>
                 <div className={messageTitleClassName}>

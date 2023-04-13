@@ -8,3 +8,8 @@ export function getDefaultUserPhoto() {
 export function getLoginImage() {
     return loginImage;
 }
+
+export function handleOnErrorImageLoad(event) {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = defaultUserImage;
+}

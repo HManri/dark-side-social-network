@@ -1,6 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = (env) => {
     const mode = env.mode;
@@ -15,7 +16,7 @@ const config = (env) => {
         },
         devtool: mode === 'development' ? 'source-map' : false,
         devServer: {
-            open: true,
+            open: false,
             overlay: {
                 warnings: true,
                 errors: true,
@@ -64,6 +65,14 @@ const config = (env) => {
             new HtmlWebpackPlugin({
                 hash: true,
                 template: './src/www/index.html',
+            }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(__dirname, 'src/app/static/avatars'),
+                        to: './static/avatars',
+                    },
+                ],
             }),
         ],
     };
