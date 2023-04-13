@@ -20,7 +20,7 @@
         "username": "princess",
         "firstName": "Leia",
         "lastName": "Organa",
-        "photo": "static/avatars/leia_organa.png",
+        "photo": "static/avatars/leia_organa.jpeg",
         "following": [2, 4]
     },
     {
